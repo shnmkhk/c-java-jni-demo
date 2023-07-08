@@ -1,3 +1,4 @@
-libhello.so
+libchello.so
+libcpphello.so
 HelloJNI.class
 HelloJNI.h

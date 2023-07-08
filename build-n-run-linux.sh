@@ -5,7 +5,8 @@ rm *.class *.h *.so;
 echo [INFO] Compiling Java source files
 $JAVA_HOME/bin/javac -h . HelloJNI.java
 echo [INFO] Compiling native C/C++ source files
-gcc -fPIC -I"$JAVA_HOME/include" -I "$JAVA_HOME/include/linux" -shared -o libhello.so HelloJNI.c
+gcc -fPIC -I"$JAVA_HOME/include" -I "$JAVA_HOME/include/linux" -shared -o libchello.so HelloJNI.c
+g++ -fPIC -I"$JAVA_HOME/include" -I "$JAVA_HOME/include/linux" -shared -o libcpphello.so HelloJNI.cpp
 echo [INFO] Launching the program
 $JAVA_HOME/bin/java -Djava.library.path=. HelloJNI
 # native-image -Djava.library.path=. HelloJNI
