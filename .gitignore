@@ -2,3 +2,5 @@ libchello.so
 libcpphello.so
 HelloJNI.class
 HelloJNI.h
+hellojni
+hellojni.build_artifacts.txt

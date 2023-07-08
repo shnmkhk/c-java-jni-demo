@@ -9,5 +9,5 @@ gcc -fPIC -I"$JAVA_HOME/include" -I "$JAVA_HOME/include/linux" -shared -o libche
 g++ -fPIC -I"$JAVA_HOME/include" -I "$JAVA_HOME/include/linux" -shared -o libcpphello.so HelloJNI.cpp
 echo [INFO] Launching the program
 $JAVA_HOME/bin/java -Djava.library.path=. HelloJNI
-# native-image -Djava.library.path=. HelloJNI
+# native-image -Djava.library.path=. HelloJNI hellojni
 # time ./hellojni
